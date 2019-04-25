@@ -11,11 +11,12 @@
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "start": "node index.js"
+    "start": "node serve"
   },
   "author": "Jonas",
   "license": "ISC",
   "devDependencies": {
+    "serve": "^10.0.1",
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
     "node-sass": "^4.5.3",
