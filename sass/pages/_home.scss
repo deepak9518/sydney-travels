@@ -1,6 +1,6 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -20vh;
 }
 
@@ -13,12 +13,6 @@
     ),
     url(../img/nat-4.jpg);
   background-size: cover;
-  transform: skewY(-7deg);
-  margin-top: -10rem;
-
-  & > * {
-    transform: skewY(7deg);
-  }
 
   @include respond(tab-port) {
     padding: 10rem 0;
@@ -33,41 +27,25 @@
       rgba($color-primary-dark, 0.8)
     ),
     url(../img/busride.jpg);
-  transform: skewY(-7deg);
-  object-fit: cover;
-  margin-top: -10rem;
-
-  z-index: 2;
-
-  & > * {
-    transform: skewY(7deg);
-  }
+  background-size: cover;
   padding: 15rem 0 15rem 0;
 
   @include respond(tab-port) {
-    padding: 20rem 0 10rem 0;
+    padding: 10rem 0 10rem 0;
   }
 }
 
 .section-stories {
   position: relative;
-  padding: 25rem 0;
-  margin-top: -10rem;
-  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  padding: 15rem 0;
 
   @include respond(tab-port) {
-    padding: 20rem 0;
+    padding: 10rem 0;
   }
 }
 
 .section-book {
   padding: 15rem 0;
-  transform: skewY(-7deg);
-  margin-top: -18rem;
-
-  & > * {
-    transform: skewY(7deg);
-  }
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,
